@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Couture Club - Explore trendy fashion clothing like t-shirts,dresses and jewwlery with a fun, pink and black aesthetic!">
+    <meta name="keywords" content="Couture Club, fashion, clothing, dresses, jewllery, trendy, pink and black">
+    <meta name="author" content="Your Name">
+    <title>Couture Club</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #fce0ec; /* Pink background color */
+        }
+
+        .hero {
+            background-color: #fce0ec; /* Pink background for home section */
+            color: #000; /* Black text color */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        /* Carousel Container */
+        .carousel-inner {
+            text-align: center;
+        }
+
+        /* Set image size to 300x300 px */
+        .carousel-inner img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover; /* Maintain aspect ratio without distortion */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        /* Carousel Controls */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black; /* Black arrows for navigation */
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .team {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">Couture Club</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Couture Club</h1>
+        <p>Explore the latest fashion trends in jeans, t-shirts, and dresses.</p>
+        <p>Whether you're looking for casual wear or bold statement pieces, we have something for everyone!</p>
+        <a href="about.html" class="btn">Learn More</a>
+        <a href="shopandetails.html" class="btn">Shop Now</a>
+        <section>
+    <h2>Our Latest Fashion Show</h2>
+    <video controls width="800" height="450" poster="thumbnail.jpg">
+        <source src="fashionshow.mp4" type="MP4 File">
+        Your browser does not support the video tag.
+    </video>
+    <p>Watch our latest fashion show featuring the newest trends and designs from Couture Club!</p>
+</section>
+
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h1>About Couture Club</h1>
+        <p>Couture Club is a fashion-forward brand bringing you the latest in trendy clothing. Our mission is to make fashion fun, accessible, and expressive for everyone.</p>
+
+        <!-- Image Carousel (Bootstrap 5) with Arrows -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Inner (Images) -->
+            <div class="carousel-inner">
+                <!-- First image (active) -->
+                <div class="carousel-item active">
+                    <img src="image1.jpg" class="d-block w-100" alt="Trendy Outfits">
+                </div>
+                <!-- Second image -->
+                <div class="carousel-item">
+                    <img src="image2.jpg" class="d-block w-100" alt="Stylish Dresses">
+                </div>
+                <!-- Third image -->
+                <div class="carousel-item">
+                    <img src="image3.jpg" class="d-block w-100" alt="Bold Accessories">
+                </div>
+            </div>
+
+            <!-- Carousel Controls (Previous and Next buttons) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Impressive Stats -->
+        <div class="stats">
+            <div class="stat-item active">
+                <h2><span class="counter" data-target="500">1000</span>+</h2>
+                <p>Unique Styles</p>
+            </div>
+            <div class="stat-item">
+                <h2><span class="counter" data-target="1000">5000</span>+</h2>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <h2><span class="counter" data-target="50">80</span></h2>
+                <p>Fashion Awards</p>
+            </div>
+        </div>
+
+        <!-- Meet Our Team -->
+        <div class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="team1.jpg" alt="Jane Doe">
+                    <h3>Jane Doe</h3>
+                    <p>Creative Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="team2.jpg" alt="John Smith">
+                    <h3>John Smith</h3>
+                    <p>Marketing Strategist</p>
+                </div>
+                <div class="team-member">
+                    <img src="team3.jpg" alt="Sarah Lee">
+                    <h3>Sarah Lee</h3>
+                    <p>Fashion Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h1>Our Products</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <h2>Trendy Outfits</h2>
+                <p>Stylish and comfortable clothing pieces perfect for any occasion.</p>
+            </div>
+            <div class="product-item">
+                <h2>Stylish Dresses</h2>
+                <p>Stylish Dresses to complement your unique style.</p>
+            </div>
+            <div class="product-item">
+                <h2>Bold Accessories</h2>
+                <p>Chic accessories that make a statement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Couture Club. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript file link -->
+    <script src="script.js"></script>
+    <script src="staticscript.js"></script>
+    
+</body>
+</html>

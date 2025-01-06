@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the latest fashion at Couture Club, including trendy jeans, t-shirts, and dresses for every style.">
+    <meta name="keywords" content="fashion, clothing, jeans, dresses, t-shirts, trendy, shop, Couture Club">
+    <meta name="author" content="Your Name">
+    <title>Shop Now - Couture Club</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        nav {
+            background-color: #ff4c8b;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .shop {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            width: 250px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-item h2 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .product-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .product-item .btn {
+            margin-top: 15px;
+            background-color: #ff4c8b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .product-item .btn:hover {
+            background-color: #ff2e6d;
+        }
+
+        .product-detail {
+            display: none;
+            padding: 50px 20px;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-detail img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-detail h2 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .product-detail p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        .product-detail .btn {
+            margin-top: 20px;
+            background-color: #ff4c8b;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .product-detail .btn:hover {
+            background-color: #ff2e6d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">Couture Club</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop Now</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Shop Section -->
+    <section class="shop">
+        <h1>Shop Our Collection</h1>
+        <p>Explore our stylish and trendy collection of jeans, t-shirts, and dresses. Find the perfect pieces to express your style.</p>
+
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-item" onclick="showProductDetail('jeans')">
+                <img src="jeans.jpg" alt="Trendy Jeans">
+                <h2>Trendy Jeans</h2>
+                <p>Comfortable and stylish jeans for every occasion.</p>
+                <button class="btn">View Product</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item" onclick="showProductDetail('tshirt')">
+                <img src="tshirt.jpg" alt="Casual T-Shirt">
+                <h2>Casual T-Shirt</h2>
+                <p>Simple and stylish, perfect for casual wear.</p>
+                <button class="btn">View Product</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item" onclick="showProductDetail('dress')">
+                <img src="dress.jpg" alt="Chic Dress">
+                <h2>Chic Dress</h2>
+                <p>Elegant and chic dresses for a night out.</p>
+                <button class="btn">View Product</button>
+            </div>
+        </div>
+
+        <div class="product-detail" id="jeans-detail">
+            <h2>Trendy Jeans</h2>
+            <img src="jeans.jpg" alt="Trendy Jeans">
+            <p>Comfortable, stylish jeans that fit any occasion. Made with high-quality denim to ensure durability and comfort. Available in various sizes.</p>
+            <p><strong>Price:</strong> $49.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-detail" id="tshirt-detail">
+            <h2>Casual T-Shirt</h2>
+            <img src="tshirt.jpg" alt="Casual T-Shirt">
+            <p>Simple and stylish, perfect for casual wear. Made with soft cotton fabric to keep you comfortable all day long.</p>
+            <p><strong>Price:</strong> $19.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-detail" id="dress-detail">
+            <h2>Chic Dress</h2>
+            <img src="dress.jpg" alt="Chic Dress">
+            <p>Elegant and chic dresses for a night out. Perfect for special occasions or an evening out with friends.</p>
+            <p><strong>Price:</strong> $69.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Couture Club. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to show product details on click
+        function showProductDetail(product) {
+            // Hide all product detail sections
+            document.querySelectorAll('.product-detail').forEach(function(detail) {
+                detail.style.display = 'none';
+            });
+
+            // Show the clicked product's detail
+            document.getElementById(product + '-detail').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
